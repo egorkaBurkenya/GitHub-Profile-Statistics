@@ -33,5 +33,3 @@ def languageStatistics(username: str) -> dict:
     url = i['languages_url']
     languages.append(requests.get(url).json()) 
   print(statistics(languages))
-    
-languageStatistics('egorkaBurkenya')
